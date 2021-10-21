@@ -41,10 +41,14 @@ class TodoList extends Component{
     renderTodos(){
        return this.state.items.map((item)=>{
             return(
-                <div key={item}>
-                    {item} | <button type= "button" class="btn btn-dark" onClick={this.deletTodo.bind(this)}><BsFillBackspaceFill /></button>
+                <div key={item} style={{display:'flex',alignItems:"center"}}>
+                    {item}
+                    <div class="">
+                        <BsFillBackspaceFill   style={{cursor:'pointer', textAlign:'right'}} onClick={this.deletTodo.bind(this)}/>  
+                    </div>
+                    
                 </div>
-            );
+            ); 
         });
     }
 
