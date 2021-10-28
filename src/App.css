@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  background-color: #060b26;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.navbar-menu{
+  background-color: #060b26;
+  width: 200px;
+  height: 100ch;
+  justify-content: center;
+  top: 0;
+  left: -100%;
+  transition: 50em;
+  color:#ffff;
+  font-size: 1.2em;
+}
+.todo-app{
+  position: relative;
+  margin-top: 0;
+  margin: start 50px;
+  text-align: center;
+  padding: 0px;
+  justify-content: center;
+  
+
+}

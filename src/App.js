@@ -1,11 +1,18 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Sidebar from './Component/Sidebar';
 import TodoList from './Component/TodoList';
 
 
+
 function App() {
+  const [collapse, setCollapse]=useState(false)
   return (
-    <TodoList/>
+    <div>
+      <Sidebar collapse={collapse} setCollapse={setCollapse}/>
+      <TodoList/>
+    </div>
   );
 }
 
