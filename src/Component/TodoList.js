@@ -46,11 +46,14 @@ class TodoList extends Component {
                 <div className="" style={{display:'flex', justifyContent:'space-between',width:'50'}}>
                         <div style={{display:'flex', justifyContent:'space-between',width:'34%'}}>
                             <div >
-                                <input type="checkbox" class="todo-checkbox" ></input>
+                                <input type="checkbox" className="todo-checkbox" ></input>
                                 
                             </div>
-                            <div key={item} style={{ display: 'flex', alignItems: "center" }}>
-                                {item}
+                            <div key={item} style={{ display: 'flex', alignItems: "center", maxWidth:'100%' }}>
+                                <div style={{}}>
+                                    {item}
+                                </div>
+                               
                             </div>
                         </div>
                         <div className="removeButton">
@@ -66,10 +69,8 @@ class TodoList extends Component {
 
 
     render() {
-        return (
-
-            <div className="">
-                <div className="position-absolute top-0 start-50 " style={{ padding: 80, position:'fixed', width:'100%' }}>
+        return (               
+                <div style={{width:'100%'}}>        
                     <h1>Ma Todo List</h1>
                     <form>
                         <input
@@ -84,8 +85,6 @@ class TodoList extends Component {
                         {this.renderTodos()}
                     </div>
                 </div>
-
-            </div>
         );
     }
 

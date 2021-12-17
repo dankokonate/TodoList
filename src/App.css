@@ -54,14 +54,36 @@
   transition: 50em;
   color:#ffff;
   font-size: 1.2em;
+  list-style-type : none
 }
-.todo-app{
+.todo-app{    
   position: relative;
   margin-top: 0;
   margin: start 50px;
   text-align: center;
   padding: 0px;
   justify-content: center;
-  
+}
+.todoList{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-end;
+  width:  1   00%;
+} 
+.sidebar-uncollapse{
+  width: 10%;
+}
+@media all and (max-width: 600px){
 
+  .sidebar-uncollapse{
+    display:none;
+  }
+}
+
+@media all and (max-width: 768px){
+
+  .sidebar-uncollapse{
+    display:none;
+  }
 }
